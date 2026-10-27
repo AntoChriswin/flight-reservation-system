@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Aurelia | Flight reservations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Manrope:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#/home"><span class="mark">✦</span>Aurelia</a>
+    <button class="burger" onclick="document.body.classList.toggle('menu')" aria-label="Menu">☰</button>
+    <nav id="nav"></nav>
+  </div>
+</header>
+<main id="app"></main>
+<footer class="foot"><div class="wrap"><span>Aurelia. A demo: your data stays in this browser.</span><a href="#/admin-login">Staff login</a></div></footer>
+<div id="modal" class="modal" onclick="if(event.target===this)closeModal()"></div>
+<div id="toasts"></div>
+<script src="app.js"></script>
+</body>
+</html>
